@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    const rps = (p1, p2) => {
+      if (p1 === p2) return "Draw!";
+      var rules = {
+        rock: "scissors",
+        paper: "rock",
+        scissors: "paper"
+      };
+      if (p2 === rules[p1]) {
+        return "Player 1 won!";
+      } else {
+        return "Player 2 won!";
+      }
+    };
+
+    let rules = {
+      rock: 'scissors',
+      paper: 'rock',
+      scissors: 'paper'
+    }
+
+    console.log(rules[paper]);
+  </script>
+</body>
+
+</html>
